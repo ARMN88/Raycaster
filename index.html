@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    canvas {
+      background-color: black;
+    }
+    .container {
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: space-around;
+      color: white;
+    }
+  </style>
+  <title>Raycaster</title>
+</head>
+<body>
+  <div class="container">
+    <div>
+    <label for="fov">Field Of View</label>
+    <input type="range" name="fov" id="fov" min="10" max="180" value="90">
+      <label for="fov" id="fovid">90</label>
+      </div>
+    <div>
+    <label for="resolution">Resolution</label>
+    <input type="range" name="resolution" id="resolution" min="4" max="500" value="150">
+      <label for="resolution" id="resid">150</label>
+      </div>
+    <div>
+    <label for="length">Radius</label>
+    <input type="range" name="length" id="length" min="0" max="500" value="200">
+      <label for="length" id="lenid">200</label>
+      </div>
+  </div>
+  <canvas></canvas>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/eruda/2.4.1/eruda.min.js"></script>
+<script src="Player.js"></script>
+<script src="Ray.js"></script>
+<script src="Collision.js"></script>
+<script src="script.js"></script>
+</html>
