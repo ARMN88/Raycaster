@@ -1,5 +1,5 @@
 # Raycaster
-A simple raycaster made in Vanilla Javascript.
+A simple raycaster made in Vanilla JavaScript.
 
 ## How It Works
 A player is put into a 2d map. The play sends out rays at a certain 
