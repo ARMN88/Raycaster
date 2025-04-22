@@ -122,10 +122,10 @@ function Update() {
     raycaster[raycaster.length-1].shoot(obstacles);
     Draw3d(raycaster[raycaster.length-1], i);
   }
-  //for(obstacle of obstacles) {
-    //obstacle.draw();
-  //}
-  //player.draw();
+  for(obstacle of obstacles) {
+    obstacle.draw();
+  }
+  player.draw();
 }
 
 function GetDistance(x1, y1, x2, y2) {
